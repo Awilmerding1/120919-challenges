@@ -17,5 +17,5 @@ def arr_data(array)
 end
 
 
-arr_data([1,5,2,78,2,3,6,1,3,5,1,6,4,2,63])
+puts arr_data([1,5,2,78,2,3,6,1,3,5,1,6,4,2,63])
   #=>expected return: {:length=>15, :first_index=>1, :last_index=>63, :maximum_value=>78}

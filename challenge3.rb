@@ -27,5 +27,5 @@ Use the method below that accepts an array of strings
 
   end
 
-sorting_arrays(["hello there", "hi", "bye", "cya later", "sup", "good day", "good morning", "farewell"])
+puts sorting_arrays(["hello there", "hi", "bye", "cya later", "sup", "good day", "good morning", "farewell"])
   # expected return: ["cya later", "good day", "good morning", "hello there", "sup", "hi", "farewell", "bye"]
