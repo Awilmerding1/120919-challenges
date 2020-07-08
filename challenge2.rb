@@ -18,31 +18,23 @@ only includes the elements that have that string as a substring
 
 
 def array_checker(array, arg)
-  if arg.class == Integer
-    return array.select do |element|
-      element.length > arg
-    end
-  else
-    return array.select do |element|
-      element.include?(arg)
-    end
-  end
+
 end
 
-array_checker(["Bob", "Sarah", "Jeff", "Molly", "Alice", "Judy", "Johnathon", "Joe"], 4)
+puts array_checker(["Bob", "Sarah", "Jeff", "Molly", "Alice", "Judy", "Johnathon", "Joe"], 4)
   #expected return: ["Sarah", "Molly", "Alice", "Johnathon"]
 
-array_checker(["hello", "there", "everybody"], 8)
+puts array_checker(["hello", "there", "everybody"], 8)
   #expected return: ["everybody"]
 
-array_checker(["hello", "there", "everybody"], 10)
+puts array_checker(["hello", "there", "everybody"], 10)
   #expected return: []
 
-array_checker(["hello", "there", "everybody"], "er")
+puts array_checker(["hello", "there", "everybody"], "er")
     #expected return: ["there", "everybody"]
 
-array_checker(["hello", "there", "everybody"], "hi")
+puts array_checker(["hello", "there", "everybody"], "hi")
   #expected return: []
 
-array_checker(["hello", "there", "everybody"], "e")
+puts array_checker(["hello", "there", "everybody"], "e")
     #expected return: ["hello", "there", "everybody"]
