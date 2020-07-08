@@ -13,7 +13,12 @@
 =end
 
 def arr_data(array)
-
+  hash = {}
+  hash[:length] = array.length
+  hash[:first_index] = array.first
+  hash[:last_index] = array.last
+  hash[:maximum_value] = array.max
+  hash
 end
 
 
